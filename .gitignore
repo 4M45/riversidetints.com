@@ -1,0 +1,9 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Windows image cache
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
