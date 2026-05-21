@@ -1148,18 +1148,21 @@ ul, ol {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-border);
+  background: var(--color-red-primary);
+  border: 1px solid var(--color-red-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: var(--transition-smooth);
+  color: #fff;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 10px rgba(230, 57, 70, 0.2);
 }
 
 .footer-social a:hover {
-  background: var(--color-red-primary);
-  border-color: var(--color-red-primary);
-  transform: translateY(-3px);
+  background: var(--color-red-dark);
+  border-color: var(--color-red-dark);
+  box-shadow: var(--shadow-btn);
+  transform: translateY(-2px);
 }
 
 .footer-social a svg {
@@ -1556,17 +1559,6 @@ ul, ol {
   flex-wrap: wrap;
 }
 
-.pricing-item {
-  text-align: center;
-}
-
-.pricing-item .price {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: var(--color-red-primary);
-}
-
 .pricing-item .label {
   font-size: 0.85rem;
   color: var(--color-text-muted);
@@ -1574,3 +1566,437 @@ ul, ol {
   letter-spacing: 1px;
   margin-top: 4px;
 }
+
+/* ============================================================
+   RIVERSIDE TINTS — VISUAL REDESIGN ADDITIONS
+   ============================================================ */
+
+/* ---------- Carbon Fiber Background ---------- */
+.carbon-bg {
+  background-color: #08080c;
+  background-image: 
+    linear-gradient(45deg, #111117 25%, transparent 25%, transparent 75%, #111117 75%, #111117),
+    linear-gradient(45deg, #111117 25%, #08080c 25%, #08080c 75%, #111117 75%, #111117);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+  position: relative;
+}
+
+/* ---------- Skewed Buttons ---------- */
+.btn-skew {
+  transform: skewX(-15deg);
+  border-radius: 2px !important;
+}
+
+.btn-skew-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: skewX(15deg);
+}
+
+/* ---------- Chevron Dividers ---------- */
+.chevron-down-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.chevron-down-divider svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.chevron-down-arrow-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 12;
+  pointer-events: auto;
+}
+
+.chevron-down-arrow-diamond {
+  width: 44px;
+  height: 44px;
+  background: #0a0a0f;
+  border: 2px solid var(--color-red-primary);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(230, 57, 70, 0.4);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.chevron-down-arrow-diamond:hover {
+  background: var(--color-red-primary);
+  box-shadow: 0 0 25px var(--color-red-primary);
+  transform: rotate(45deg) scale(1.05);
+}
+
+.chevron-down-arrow-diamond svg {
+  transform: rotate(-45deg);
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+/* Upward Chevron Divider for Footer */
+.chevron-up-divider-container {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+
+.chevron-up-divider-svg {
+  position: absolute;
+  top: -59px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.chevron-up-divider-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ---------- Header Centering & Split Nav ---------- */
+@media (min-width: 1025px) {
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: relative;
+  }
+
+  .nav-split-left {
+    display: flex;
+    gap: 32px;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 60px;
+  }
+
+  .nav-split-right {
+    display: flex;
+    gap: 32px;
+    flex: 1;
+    justify-content: flex-start;
+    margin-left: 60px;
+  }
+
+  .header .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .header-contact-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+
+  .header-phone-link {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition-fast);
+  }
+
+  .header-phone-link:hover {
+    color: var(--color-red-primary);
+  }
+
+  .header-phone-link svg {
+    color: var(--color-red-primary);
+  }
+
+  /* Hide default nav layout on desktop */
+  .header .nav-links,
+  .header .header-right {
+    display: none;
+  }
+
+  .nav-split-left a, .nav-split-right a {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    transition: var(--transition-fast);
+    position: relative;
+    padding: 6px 0;
+  }
+
+  .nav-split-left a::after, .nav-split-right a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-red-primary);
+    transition: var(--transition-smooth);
+  }
+
+  .nav-split-left a:hover, .nav-split-right a:hover,
+  .nav-split-left a.active, .nav-split-right a.active {
+    color: var(--color-text-primary);
+  }
+
+  .nav-split-left a:hover::after, .nav-split-right a:hover::after,
+  .nav-split-left a.active::after, .nav-split-right a.active::after {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-split-left,
+  .nav-split-right,
+  .header-contact-actions {
+    display: none;
+  }
+}
+
+/* ---------- Brand Shield Logo (Image 3 Style) ---------- */
+.logo-shield {
+  width: 46px;
+  height: 52px;
+  background: linear-gradient(135deg, var(--color-red-primary), var(--color-red-dark));
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo-shield::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 1px dashed rgba(255, 255, 255, 0.35);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+  pointer-events: none;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.logo-text span {
+  color: var(--color-red-primary);
+}
+
+/* ---------- Hero Type Selector (Image 3 Radio Buttons) ---------- */
+.hero-selection {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  animation: fadeInUp 0.6s ease-out 0.25s both;
+}
+
+.hero-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-text-primary);
+  user-select: none;
+}
+
+.hero-radio input {
+  display: none;
+}
+
+.radio-dot {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-text-secondary);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.radio-dot::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--color-red-primary);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: var(--transition-fast);
+}
+
+.hero-radio input:checked + .radio-dot {
+  border-color: var(--color-red-primary);
+  box-shadow: 0 0 10px var(--color-red-glow);
+}
+
+.hero-radio input:checked + .radio-dot::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---------- Service Card Slanted top body (Image 3 Style) ---------- */
+.service-card-body-skew {
+  position: relative;
+  margin-top: -24px;
+  background: var(--color-bg-card);
+  clip-path: polygon(0 24px, 50% 0, 100% 24px, 100% 100%, 0 100%);
+  padding: 44px 28px 28px !important;
+  z-index: 2;
+  border-top: none !important;
+}
+
+/* ---------- Tesla Paint Protection Slanted Image Border Frame ---------- */
+.slanted-frame-container {
+  position: relative;
+  padding: 8px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.slanted-frame-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color-red-primary),
+    var(--color-red-primary) 3px,
+    transparent 3px,
+    transparent 7px
+  );
+  z-index: 3;
+}
+
+.slanted-frame-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color-red-primary),
+    var(--color-red-primary) 3px,
+    transparent 3px,
+    transparent 7px
+  );
+  z-index: 3;
+}
+
+.slanted-frame-container img {
+  border-radius: calc(var(--radius-md) - 4px);
+  width: 100%;
+}
+
+/* ---------- Testimonial Overlapping Avatar & Highlighting ---------- */
+.testimonials-grid {
+  align-items: stretch;
+}
+
+.testimonial-card-highlight {
+  border-color: rgba(230, 57, 70, 0.4) !important;
+  box-shadow: var(--shadow-card), 0 0 40px rgba(230, 57, 70, 0.15);
+  background: var(--color-bg-card-hover) !important;
+  transform: scale(1.03);
+  z-index: 2;
+}
+
+@media (min-width: 1025px) {
+  .testimonial-card-highlight {
+    transform: scale(1.05);
+  }
+}
+
+.testimonial-avatar-img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  margin: -74px auto 20px;
+  border: 4px solid var(--color-bg-card);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.testimonial-card-highlight .testimonial-avatar-img {
+  border-color: var(--color-bg-card-hover);
+  box-shadow: 0 4px 20px rgba(230, 57, 70, 0.3);
+}
+
+/* ---------- Portfolio Text Overlay (Image 4 Style) ---------- */
+.gallery-item-overlay {
+  opacity: 1 !important; /* Always visible text background */
+  background: linear-gradient(to top, rgba(10, 10, 15, 0.9) 0%, rgba(10, 10, 15, 0.4) 50%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 24px;
+}
+
+.gallery-item-overlay h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+

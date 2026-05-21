@@ -192,23 +192,39 @@
        ============================================================ -->
   <header class="header" id="header">
     <div class="container">
+      <!-- Left Split Navigation (Desktop Only) -->
+      <div class="nav-split-left">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+      </div>
+
+      <!-- Centered Shield Logo -->
       <a href="#" class="logo" aria-label="Riverside Tints Home">
-        <div class="logo-icon">RT</div>
-        Riverside <span>Tints</span>
+        <div class="logo-shield">RT</div>
+        <div class="logo-text">Riverside <span>Tints</span></div>
       </a>
 
-      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
-        <a href="#home" class="active">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
+      <!-- Right Split Navigation (Desktop Only) -->
+      <div class="nav-split-right">
         <a href="#tint-guide">Tint Guide</a>
         <a href="#faq">FAQ</a>
         <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      </div>
 
+      <!-- Contact Details & Action Button -->
+      <div class="header-contact-actions">
+        <a href="tel:+19515550190" class="header-phone-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>(951) 555-0190</span>
+        </a>
+        <a href="#contact" class="btn btn-skew btn-primary">
+          <span class="btn-skew-inner">Contact Us</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
       <div class="header-right">
-        <a href="#contact" class="btn btn-primary">Get a Quote</a>
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
           <span></span>
           <span></span>
@@ -217,6 +233,30 @@
       </div>
     </div>
   </header>
+
+  <!-- Mobile Drawer Menu (Compatible with script.js selectors) -->
+  <nav class="nav-links" id="nav-links" aria-label="Mobile navigation">
+    <div style="text-align: center; margin-bottom: 30px; width: 100%;">
+      <div class="logo-shield" style="margin: 0 auto 10px;">RT</div>
+      <div class="logo-text" style="font-size: 1.3rem;">Riverside <span>Tints</span></div>
+    </div>
+    <a href="#home" class="active">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#tint-guide">Tint Guide</a>
+    <a href="#faq">FAQ</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <div style="margin-top: 30px; text-align: center; width: 100%; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px;">
+      <a href="tel:+19515550190" class="header-phone-link" style="justify-content: center; margin-bottom: 20px; font-size: 1.1rem; display: flex;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (951) 555-0190
+      </a>
+      <a href="#contact" class="btn btn-skew btn-primary" style="width: 100%;">
+        <span class="btn-skew-inner">Get a Free Quote</span>
+      </a>
+    </div>
+  </nav>
 
   <!-- Mobile Nav Overlay -->
   <div class="nav-overlay" id="nav-overlay"></div>
@@ -237,29 +277,44 @@
         </div>
         <h1>Premium <span class="highlight">Window Tinting</span> in Riverside, CA</h1>
         <p class="hero-subtitle">Expert automotive, commercial, and residential window tinting with lifetime warranty. Over 10 years of experience and 36,000+ windows tinted.</p>
-        <div class="hero-types">
-          <span><span class="type-dot"></span> Automotive</span>
-          <span><span class="type-dot"></span> Commercial</span>
-          <span><span class="type-dot"></span> Residential</span>
+        
+        <!-- Interactive Service Type Options (Image 3 Inspiration) -->
+        <div class="hero-selection">
+          <label class="hero-radio">
+            <input type="radio" name="tint_type" checked>
+            <span class="radio-dot"></span>
+            Commercial
+          </label>
+          <label class="hero-radio">
+            <input type="radio" name="tint_type">
+            <span class="radio-dot"></span>
+            Residential
+          </label>
         </div>
+
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-          <a href="#services" class="btn btn-outline">Our Services</a>
+          <a href="#contact" class="btn btn-skew btn-primary">
+            <span class="btn-skew-inner">Get Started</span>
+          </a>
+          <a href="#services" class="btn btn-skew btn-outline">
+            <span class="btn-skew-inner">Our Services</span>
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- Wave Divider -->
-    <div class="hero-divider">
-      <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0 100L60 88C120 76 240 52 360 44C480 36 600 44 720 56C840 68 960 84 1080 84C1200 84 1320 68 1380 60L1440 52V100H1380C1320 100 1200 100 1080 100C960 100 840 100 720 100C600 100 480 100 360 100C240 100 120 100 60 100H0Z" fill="#111118"/>
+    <!-- Chevron Down Divider (Image 3 Style) -->
+    <div class="chevron-down-divider">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 0 L720 56 L1440 0 L1440 60 L0 60 Z" fill="#111118" />
+        <path d="M0 0 L720 56 L1440 0" stroke="#e63946" stroke-width="4" fill="none" />
       </svg>
+      <div class="chevron-down-arrow-container">
+        <a href="#services" class="chevron-down-arrow-diamond" aria-label="Scroll to services">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+        </a>
+      </div>
     </div>
-
-    <!-- Scroll Indicator -->
-    <a href="#services" class="hero-scroll" aria-label="Scroll to services">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-    </a>
   </section>
 
   <!-- ============================================================
@@ -274,10 +329,12 @@
           <div class="service-card-image">
             <img src="images/service-window-tint.png" alt="Professional window tinting service at Riverside Tints - ceramic film application" width="600" height="400" loading="lazy">
           </div>
-          <div class="service-card-body">
+          <div class="service-card-body service-card-body-skew">
             <h3>Window Tinting</h3>
             <p>Our premium ceramic and carbon window tints block up to 99% of UV rays and reduce interior heat by up to 60%. We offer automotive, commercial, and residential tinting with a lifetime warranty on all installations.</p>
-            <a href="#contact" class="btn btn-primary">Learn More</a>
+            <a href="#contact" class="btn btn-skew btn-primary">
+              <span class="btn-skew-inner">Learn More</span>
+            </a>
           </div>
         </article>
 
@@ -285,10 +342,12 @@
           <div class="service-card-image">
             <img src="images/service-paint-protection.png" alt="Paint protection film installation at Riverside Tints" width="600" height="400" loading="lazy">
           </div>
-          <div class="service-card-body">
+          <div class="service-card-body service-card-body-skew">
             <h3>Paint Protection Film</h3>
             <p>Protect your vehicle's paint from rock chips, scratches, and road debris with our self-healing paint protection film (PPF). We use top-tier films with 10-year warranties for full front, partial, or complete body coverage.</p>
-            <a href="#contact" class="btn btn-primary">Learn More</a>
+            <a href="#contact" class="btn btn-skew btn-primary">
+              <span class="btn-skew-inner">Learn More</span>
+            </a>
           </div>
         </article>
 
@@ -296,10 +355,12 @@
           <div class="service-card-image">
             <img src="images/service-detailing.png" alt="Professional auto detailing and paint correction at Riverside Tints" width="600" height="400" loading="lazy">
           </div>
-          <div class="service-card-body">
+          <div class="service-card-body service-card-body-skew">
             <h3>Auto Detailing</h3>
             <p>From paint correction and ceramic coating to full interior cleaning, our detailing team restores your vehicle to showroom condition. We use professional-grade products to deliver a deep, lasting shine that protects your investment.</p>
-            <a href="#contact" class="btn btn-primary">Learn More</a>
+            <a href="#contact" class="btn btn-skew btn-primary">
+              <span class="btn-skew-inner">Learn More</span>
+            </a>
           </div>
         </article>
 
@@ -309,6 +370,9 @@
 
   <!-- ============================================================
        ABOUT / WHY CHOOSE US
+       ============================================================ -->
+  <!-- ============================================================
+       ABOUT & WHY CHOOSE US
        ============================================================ -->
   <section class="about" id="about">
     <div class="container">
@@ -356,39 +420,55 @@
             </div>
           </div>
 
-          <a href="#contact" class="btn btn-primary">Schedule Your Appointment</a>
+          <a href="#contact" class="btn btn-skew btn-primary">
+            <span class="btn-skew-inner">Schedule Your Appointment</span>
+          </a>
         </div>
 
         <div class="about-image reveal reveal-delay-2">
           <img src="images/service-paint-protection.png" alt="Riverside Tints technician applying paint protection film to a luxury vehicle" width="600" height="500" loading="lazy">
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ============================================================
-       STATS SECTION
-       ============================================================ -->
-  <section class="stats" aria-label="Business statistics">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal">
-          <div class="stat-number" data-target="36000">0+</div>
-          <div class="stat-label">Windows Tinted</div>
+      <!-- Divider line -->
+      <hr style="border: none; border-top: 1px solid var(--color-border); margin: 70px 0 50px;">
+
+      <!-- Tesla Paint Protection Featured Block (Image 2 Inspiration) -->
+      <div class="paint-protection-feature reveal" style="margin-top: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px; flex-wrap: wrap; gap: 20px;">
+          <div style="max-width: 680px;">
+            <h3 style="font-family: var(--font-heading); font-size: clamp(1.8rem, 3.5vw, 2.3rem); font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: #fff; margin-bottom: 12px;">Tesla Paint Protection &amp; Ceramic Coatings</h3>
+            <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.7;">Give your Tesla the ultimate shield against road debris, paint chips, and UV damage. Our premium self-healing paint protection film (PPF) is custom-cut for all Tesla models, providing invisible protection with a high-gloss or matte finish. Pair it with our ceramic coatings for an unmatched shine that repels dust and water, making maintenance effortless.</p>
+          </div>
+          <a href="#contact" class="btn btn-skew btn-primary" style="margin-bottom: 5px;">
+            <span class="btn-skew-inner">Read More</span>
+          </a>
         </div>
-        <div class="stat-item reveal reveal-delay-1">
-          <div class="stat-number" data-target="10">0+</div>
-          <div class="stat-label">Years of Experience</div>
+
+        <!-- Featured Image with Slanted Corner Stripes Border Frame -->
+        <div class="slanted-frame-container" style="margin-bottom: 50px;">
+          <img src="images/service-paint-protection.png" alt="Tesla paint protection film application in paint booth at Riverside Tints" style="width: 100%; height: auto; display: block; object-fit: cover;">
         </div>
-        <div class="stat-item reveal reveal-delay-2">
-          <div class="stat-number" data-target="300">0+</div>
-          <div class="stat-label">Vehicles Wrapped</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-3">
-          <div class="stat-number" data-target="4.9">0</div>
-          <div class="stat-label">Google Rating</div>
+
+        <!-- Stats Counters Group (Image 2 style) inside .stats for script.js compatibility -->
+        <div class="stats" style="background: transparent; border-top: none; border-bottom: none; padding: 0; margin-top: 20px;">
+          <div class="stats-grid" style="border-top: none; border-bottom: none; padding: 0;">
+            <div class="stat-item reveal" style="padding: 10px;">
+              <div class="stat-number" data-target="36000" style="font-size: clamp(2rem, 5vw, 3.5rem);">0+</div>
+              <div class="stat-label" style="font-size: 0.9rem; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 8px;">Windows Tinted</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-1" style="padding: 10px;">
+              <div class="stat-number" data-target="10" style="font-size: clamp(2rem, 5vw, 3.5rem);">0+</div>
+              <div class="stat-label" style="font-size: 0.9rem; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 8px;">Years of Experience</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-2" style="padding: 10px;">
+              <div class="stat-number" data-target="300" style="font-size: clamp(2rem, 5vw, 3.5rem);">0+</div>
+              <div class="stat-label" style="font-size: 0.9rem; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 8px;">Vehicles Wrapped</div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -530,7 +610,7 @@
 
         <div class="faq-item reveal" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-            <h3 itemprop="name">Is 2 days enough for tint to cure?</h3>
+            <h3 itemprop="name">Is 2 days enough for tint?</h3>
             <div class="faq-toggle">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </div>
@@ -597,8 +677,12 @@
       <div class="testimonials-grid">
 
         <div class="testimonial-card reveal reveal-delay-1">
-          <div class="testimonial-avatar">JS</div>
-          <div class="testimonial-quote-icon">"</div>
+          <svg class="testimonial-avatar-img" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="#1b1b24" />
+            <circle cx="50" cy="38" r="16" fill="#e63946" />
+            <path d="M22 78C22 63.64 34.54 52 50 52C65.46 52 78 63.64 78 78" stroke="#e63946" stroke-width="6" stroke-linecap="round" fill="none" />
+          </svg>
+          <div class="testimonial-quote-icon">“</div>
           <p class="testimonial-text">Best tint shop in Riverside hands down. I got 20% ceramic tint on all my windows and the heat rejection is incredible. The installer was professional and finished my SUV in just 90 minutes. Will be coming back for PPF!</p>
           <div class="testimonial-name">John S.</div>
           <div class="testimonial-stars">
@@ -610,9 +694,13 @@
           </div>
         </div>
 
-        <div class="testimonial-card reveal reveal-delay-2">
-          <div class="testimonial-avatar">MR</div>
-          <div class="testimonial-quote-icon">"</div>
+        <div class="testimonial-card testimonial-card-highlight reveal reveal-delay-2">
+          <svg class="testimonial-avatar-img" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="#e63946" />
+            <circle cx="50" cy="38" r="16" fill="#ffffff" />
+            <path d="M22 78C22 63.64 34.54 52 50 52C65.46 52 78 63.64 78 78" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" />
+          </svg>
+          <div class="testimonial-quote-icon">“</div>
           <p class="testimonial-text">Had my Tesla Model 3 fully tinted with ceramic film. The quality is outstanding — no bubbles, perfect edges, and the heat difference is night and day. They also explained California tint laws so I stayed legal on the front windows. Highly recommend!</p>
           <div class="testimonial-name">Maria R.</div>
           <div class="testimonial-stars">
@@ -625,8 +713,12 @@
         </div>
 
         <div class="testimonial-card reveal reveal-delay-3">
-          <div class="testimonial-avatar">KF</div>
-          <div class="testimonial-quote-icon">"</div>
+          <svg class="testimonial-avatar-img" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="#1b1b24" />
+            <circle cx="50" cy="38" r="16" fill="#f4c430" />
+            <path d="M22 78C22 63.64 34.54 52 50 52C65.46 52 78 63.64 78 78" stroke="#f4c430" stroke-width="6" stroke-linecap="round" fill="none" />
+          </svg>
+          <div class="testimonial-quote-icon">“</div>
           <p class="testimonial-text">Got paint protection film on the full front end of my Porsche Cayenne. The install was flawless — you can't even tell it's there. Already saved me from a rock chip on the highway. The crew at Riverside Tints knows their stuff!</p>
           <div class="testimonial-name">Kevin F.</div>
           <div class="testimonial-stars">
@@ -651,28 +743,28 @@
       <div class="gallery-grid">
 
         <div class="gallery-item reveal reveal-delay-1">
-          <img src="images/gallery-tinted-car.png" alt="Black sedan with premium dark window tint installed by Riverside Tints" width="400" height="300" loading="lazy">
-          <div class="gallery-item-overlay">
-            <h4>Window Tinting</h4>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal reveal-delay-2">
-          <img src="images/gallery-vehicle-wrap.png" alt="Matte black vehicle wrap on a sports car by Riverside Tints" width="400" height="300" loading="lazy">
+          <img src="images/gallery-vehicle-wrap.png" alt="Premium matte vehicle wrap on a sports car by Riverside Tints" width="400" height="300" loading="lazy">
           <div class="gallery-item-overlay">
             <h4>Vehicle Wraps</h4>
           </div>
         </div>
 
-        <div class="gallery-item reveal reveal-delay-3">
-          <img src="images/gallery-ceramic-coating.png" alt="Ceramic coating application on a white BMW by Riverside Tints" width="400" height="300" loading="lazy">
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="images/service-paint-protection.png" alt="Clear paint protection film application for rock chip defense by Riverside Tints" width="400" height="300" loading="lazy">
           <div class="gallery-item-overlay">
-            <h4>Ceramic Coating</h4>
+            <h4>Paint Protection</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="images/gallery-caliper-wrap.png" alt="Custom red caliper wrap with premium finish by Riverside Tints" width="400" height="300" loading="lazy">
+          <div class="gallery-item-overlay">
+            <h4>Caliper Wraps</h4>
           </div>
         </div>
 
         <div class="gallery-item reveal reveal-delay-4">
-          <img src="images/gallery-chrome-delete.png" alt="Chrome delete vinyl wrap on a luxury vehicle by Riverside Tints" width="400" height="300" loading="lazy">
+          <img src="images/gallery-chrome-delete.png" alt="Sleek gloss black chrome delete wrap on window trim by Riverside Tints" width="400" height="300" loading="lazy">
           <div class="gallery-item-overlay">
             <h4>Chrome Deletes</h4>
           </div>
@@ -700,15 +792,21 @@
        FOOTER
        ============================================================ -->
   <footer class="footer" role="contentinfo">
-    <div class="footer-top-line"></div>
+    <div class="chevron-up-divider-container">
+      <div class="chevron-up-divider-svg">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 60 L720 0 L1440 60 Z" fill="#111118" />
+        </svg>
+      </div>
+    </div>
     <div class="footer-main">
       <div class="container">
         <div class="footer-grid">
 
           <div class="footer-brand">
-            <a href="#" class="logo" aria-label="Riverside Tints Home">
-              <div class="logo-icon">RT</div>
-              Riverside <span>Tints</span>
+            <a href="#" class="logo" aria-label="Riverside Tints Home" style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+              <div class="logo-shield">RT</div>
+              <div class="logo-text">Riverside <span style="color: var(--color-red-primary);">Tints</span></div>
             </a>
             <p>Riverside Tints has been the Inland Empire's trusted window tinting and automotive protection shop for over 10 years. We specialize in premium ceramic window tint, paint protection film, vehicle wraps, and auto detailing — all backed by our lifetime warranty.</p>
             <div class="footer-social">
