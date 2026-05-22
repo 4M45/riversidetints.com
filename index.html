@@ -202,65 +202,66 @@
 
       <!-- Centered Shield Logo Badge -->
       <a href="#" class="logo-badge" aria-label="Riverside Tints Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" class="logo-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logo-svg">
           <defs>
-            <linearGradient id="shieldBg" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#e63946" />
-              <stop offset="40%" stop-color="#b81d24" />
-              <stop offset="100%" stop-color="#7a0f14" />
-            </linearGradient>
-            <linearGradient id="bannerBg" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#1b1b26" />
-              <stop offset="100%" stop-color="#0a0a0f" />
-            </linearGradient>
             <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#ffffff" />
-              <stop offset="20%" stop-color="#cccccc" />
-              <stop offset="50%" stop-color="#aaaaaa" />
-              <stop offset="80%" stop-color="#e0e0e0" />
-              <stop offset="100%" stop-color="#888888" />
+              <stop offset="25%" stop-color="#b8b8b8" />
+              <stop offset="50%" stop-color="#7a7a7a" />
+              <stop offset="75%" stop-color="#cccccc" />
+              <stop offset="100%" stop-color="#555555" />
             </linearGradient>
-            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#fff3a8" />
-              <stop offset="50%" stop-color="#f4c430" />
-              <stop offset="100%" stop-color="#b8860b" />
+            <linearGradient id="carBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="100%" stop-color="#9ca3af" />
+            </linearGradient>
+            <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ff3b30" />
+              <stop offset="100%" stop-color="#e62525" />
             </linearGradient>
             <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%">
               <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
             </filter>
           </defs>
-          <g id="star">
-            <polygon points="0,-7 2.1,-2.1 7.2,-2.1 3.1,1 4.7,5.9 0,2.9 -4.7,5.9 -3.1,1 -7.2,-2.1 -2.1,-2.1" fill="url(#goldGrad)" />
-          </g>
           <g filter="url(#logoShadow)">
-            <path d="M 100,5 C 140,5 178,13 195,24 C 200,55 195,95 178,128 C 156,160 124,175 100,175 C 76,175 44,160 22,128 C 5,95 0,55 5,24 C 22,13 60,5 100,5 Z" fill="url(#chromeGrad)" />
-            <path d="M 100,10 C 136,10 171,17 187,27 C 191,55 187,92 171,123 C 151,152 121,166 100,166 C 79,166 49,152 29,123 C 13,92 9,55 13,27 C 29,17 64,10 100,10 Z" fill="url(#shieldBg)" />
-            <!-- Sleek Sports Car Silhouette (Fits perfectly above the banner) -->
+            <!-- Outer Bevel Shield (Silver Border) -->
+            <path d="M 100,10 Q 150,20 188,12 C 198,85 183,152 100,192 C 17,152 2,85 12,12 Q 50,20 100,10 Z" fill="url(#chromeGrad)" />
+            <!-- Inner Shield Area (Black/Dark Background) -->
+            <path d="M 100,16 Q 148,25 182,18 C 190,86 177,146 100,184 C 23,146 10,86 18,18 Q 52,25 100,16 Z" fill="#09090d" />
+            <!-- Red Inner Border -->
+            <path d="M 100,20 Q 146,28 178,22 C 185,85 173,142 100,178 C 27,142 15,85 22,22 Q 54,28 100,20 Z" fill="none" stroke="#e62525" stroke-width="2" />
+            <!-- Red Chevron Accent at bottom tip -->
+            <path d="M 70,148 L 100,172 L 130,148" fill="none" stroke="#e62525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <!-- Sleek Sports Car Silhouette -->
             <g id="car-silhouette">
-              <path d="M 60,74 C 58,74 56,72 56,70 C 56,63 64,60 72,56 C 78,53 82,50 85,46 C 88,42 90,34 100,34 C 110,34 112,42 115,46 C 118,50 122,53 128,56 C 136,60 144,63 144,70 C 144,72 142,74 140,74 C 120,71.5 80,71.5 60,74 Z" fill="url(#bannerBg)" stroke="url(#chromeGrad)" stroke-width="1.5" />
-              <path d="M 82,48 C 88,47 100,47 100,47 C 100,47 112,47 118,48 C 115,54 110,57 100,57 C 90,57 85,54 82,48 Z" fill="#05050a" stroke="url(#chromeGrad)" stroke-width="1" />
-              <path d="M 66,63 L 78,65 L 75,69 L 65,66 Z" fill="url(#goldGrad)" />
-              <path d="M 134,63 L 122,65 L 125,69 L 135,66 Z" fill="url(#goldGrad)" />
-              <path d="M 88,67 L 112,67" stroke="url(#chromeGrad)" stroke-width="1" stroke-linecap="round" />
-              <path d="M 92,70 L 108,70" stroke="url(#chromeGrad)" stroke-width="1" stroke-linecap="round" />
+              <!-- Main Silver Body Shape -->
+              <path d="M 50,70 C 50,60 60,54 75,50 C 85,36 95,30 100,30 C 105,30 115,36 125,50 C 140,54 150,60 150,70 C 150,76 142,76 138,76 C 130,76 125,73 125,73 L 75,73 C 75,73 70,76 62,76 C 58,76 50,76 50,70 Z" fill="url(#carBodyGrad)" />
+              <!-- Side Mirrors -->
+              <path d="M 62,52 C 54,52 48,54 50,56 C 53,58 60,56 64,55 Z" fill="url(#carBodyGrad)" />
+              <path d="M 138,52 C 146,52 152,54 150,56 C 147,58 140,56 136,55 Z" fill="url(#carBodyGrad)" />
+              <!-- Windshield Cutout -->
+              <path d="M 78,48 C 83,38 98,34 98,34 C 98,34 113,38 118,48 C 114,52 108,54 98,54 C 88,54 82,52 78,48 Z" fill="#09090d" stroke="url(#carBodyGrad)" stroke-width="1" />
+              <!-- Windshield Swoop/Reflection -->
+              <path d="M 94,37 C 103,37 112,41 115,45 C 109,47 104,43 94,37 Z" fill="#ffffff" opacity="0.9" />
+              <!-- Headlights -->
+              <path d="M 56,64 C 62,67 68,68 72,68 C 66,69 60,68 56,64 Z" fill="#ffffff" />
+              <path d="M 144,64 C 138,67 132,68 128,68 C 134,69 140,68 144,64 Z" fill="#ffffff" />
+              <!-- Front Grille details -->
+              <path d="M 60,70 L 70,70 L 68,72 L 62,72 Z" fill="#09090d" />
+              <path d="M 140,70 L 130,70 L 132,72 L 138,72 Z" fill="#09090d" />
+              <path d="M 82,70 L 118,70 L 116,72 L 84,72 Z" fill="#09090d" />
+              <!-- Splitter Lip -->
+              <path d="M 52,74 L 148,74 L 144,76 L 56,76 Z" fill="url(#carBodyGrad)" />
             </g>
-            <path d="M 3,92 L 18,102 L 18,82 Z" fill="#4a0a0f" />
-            <path d="M 197,92 L 182,102 L 182,82 Z" fill="#4a0a0f" />
-            <path d="M 2,82 C 50,68 150,68 198,82 L 198,118 C 150,104 50,104 2,118 Z" fill="url(#chromeGrad)" />
-            <path d="M 5,84 C 50,71 150,71 195,84 L 195,115 C 150,102 50,102 5,115 Z" fill="url(#bannerBg)" />
-            <path id="textPathTop" d="M 10,100 C 55,87 145,87 190,100" fill="none" stroke="none" />
-            <path id="textPathBottom" d="M 12,111 C 55,98 145,98 188,111" fill="none" stroke="none" />
-            <text font-family="'Outfit', sans-serif" font-weight="900" font-size="12px" fill="#ffffff" letter-spacing="2px">
-              <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">RIVERSIDE</textPath>
-            </text>
-            <text font-family="'Outfit', sans-serif" font-weight="900" font-size="13px" fill="url(#chromeGrad)" letter-spacing="3.5px">
-              <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">TINTS</textPath>
-            </text>
-            <use href="#star" x="55" y="137" />
-            <use href="#star" x="77" y="145" />
-            <use href="#star" x="100" y="148" />
-            <use href="#star" x="123" y="145" />
-            <use href="#star" x="145" y="137" />
+            <!-- Stacked Layered Text: RIVERSIDE TINTS -->
+            <!-- RIVERSIDE (Line 1) -->
+            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#000000" stroke-width="6" stroke-linejoin="round">RIVERSIDE</text>
+            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">RIVERSIDE</text>
+            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="url(#redGrad)">RIVERSIDE</text>
+            <!-- TINTS (Line 2) -->
+            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#000000" stroke-width="7" stroke-linejoin="round">TINTS</text>
+            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">TINTS</text>
+            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="url(#redGrad)">TINTS</text>
           </g>
         </svg>
       </a>
@@ -294,65 +295,66 @@
   <nav class="nav-links" id="nav-links" aria-label="Mobile navigation">
     <div style="text-align: center; margin-bottom: 30px; width: 100%;">
       <div style="width: 110px; margin: 0 auto;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" class="logo-svg" style="height: 100px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logo-svg" style="height: 100px;">
           <defs>
-            <linearGradient id="shieldBgM" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#e63946" />
-              <stop offset="40%" stop-color="#b81d24" />
-              <stop offset="100%" stop-color="#7a0f14" />
-            </linearGradient>
-            <linearGradient id="bannerBgM" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#1b1b26" />
-              <stop offset="100%" stop-color="#0a0a0f" />
-            </linearGradient>
             <linearGradient id="chromeGradM" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#ffffff" />
-              <stop offset="20%" stop-color="#cccccc" />
-              <stop offset="50%" stop-color="#aaaaaa" />
-              <stop offset="80%" stop-color="#e0e0e0" />
-              <stop offset="100%" stop-color="#888888" />
+              <stop offset="25%" stop-color="#b8b8b8" />
+              <stop offset="50%" stop-color="#7a7a7a" />
+              <stop offset="75%" stop-color="#cccccc" />
+              <stop offset="100%" stop-color="#555555" />
             </linearGradient>
-            <linearGradient id="goldGradM" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#fff3a8" />
-              <stop offset="50%" stop-color="#f4c430" />
-              <stop offset="100%" stop-color="#b8860b" />
+            <linearGradient id="carBodyGradM" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="100%" stop-color="#9ca3af" />
+            </linearGradient>
+            <linearGradient id="redGradM" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ff3b30" />
+              <stop offset="100%" stop-color="#e62525" />
             </linearGradient>
             <filter id="logoShadowM" x="-10%" y="-10%" width="120%" height="120%">
               <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
             </filter>
           </defs>
-          <g id="starM">
-            <polygon points="0,-7 2.1,-2.1 7.2,-2.1 3.1,1 4.7,5.9 0,2.9 -4.7,5.9 -3.1,1 -7.2,-2.1 -2.1,-2.1" fill="url(#goldGradM)" />
-          </g>
           <g filter="url(#logoShadowM)">
-            <path d="M 100,5 C 140,5 178,13 195,24 C 200,55 195,95 178,128 C 156,160 124,175 100,175 C 76,175 44,160 22,128 C 5,95 0,55 5,24 C 22,13 60,5 100,5 Z" fill="url(#chromeGradM)" />
-            <path d="M 100,10 C 136,10 171,17 187,27 C 191,55 187,92 171,123 C 151,152 121,166 100,166 C 79,166 49,152 29,123 C 13,92 9,55 13,27 C 29,17 64,10 100,10 Z" fill="url(#shieldBgM)" />
-            <!-- Sleek Sports Car Silhouette (Fits perfectly above the banner) -->
+            <!-- Outer Bevel Shield (Silver Border) -->
+            <path d="M 100,10 Q 150,20 188,12 C 198,85 183,152 100,192 C 17,152 2,85 12,12 Q 50,20 100,10 Z" fill="url(#chromeGradM)" />
+            <!-- Inner Shield Area (Black/Dark Background) -->
+            <path d="M 100,16 Q 148,25 182,18 C 190,86 177,146 100,184 C 23,146 10,86 18,18 Q 52,25 100,16 Z" fill="#09090d" />
+            <!-- Red Inner Border -->
+            <path d="M 100,20 Q 146,28 178,22 C 185,85 173,142 100,178 C 27,142 15,85 22,22 Q 54,28 100,20 Z" fill="none" stroke="#e62525" stroke-width="2" />
+            <!-- Red Chevron Accent at bottom tip -->
+            <path d="M 70,148 L 100,172 L 130,148" fill="none" stroke="#e62525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <!-- Sleek Sports Car Silhouette -->
             <g id="car-silhouette-m">
-              <path d="M 60,74 C 58,74 56,72 56,70 C 56,63 64,60 72,56 C 78,53 82,50 85,46 C 88,42 90,34 100,34 C 110,34 112,42 115,46 C 118,50 122,53 128,56 C 136,60 144,63 144,70 C 144,72 142,74 140,74 C 120,71.5 80,71.5 60,74 Z" fill="url(#bannerBgM)" stroke="url(#chromeGradM)" stroke-width="1.5" />
-              <path d="M 82,48 C 88,47 100,47 100,47 C 100,47 112,47 118,48 C 115,54 110,57 100,57 C 90,57 85,54 82,48 Z" fill="#05050a" stroke="url(#chromeGradM)" stroke-width="1" />
-              <path d="M 66,63 L 78,65 L 75,69 L 65,66 Z" fill="url(#goldGradM)" />
-              <path d="M 134,63 L 122,65 L 125,69 L 135,66 Z" fill="url(#goldGradM)" />
-              <path d="M 88,67 L 112,67" stroke="url(#chromeGradM)" stroke-width="1" stroke-linecap="round" />
-              <path d="M 92,70 L 108,70" stroke="url(#chromeGradM)" stroke-width="1" stroke-linecap="round" />
+              <!-- Main Silver Body Shape -->
+              <path d="M 50,70 C 50,60 60,54 75,50 C 85,36 95,30 100,30 C 105,30 115,36 125,50 C 140,54 150,60 150,70 C 150,76 142,76 138,76 C 130,76 125,73 125,73 L 75,73 C 75,73 70,76 62,76 C 58,76 50,76 50,70 Z" fill="url(#carBodyGradM)" />
+              <!-- Side Mirrors -->
+              <path d="M 62,52 C 54,52 48,54 50,56 C 53,58 60,56 64,55 Z" fill="url(#carBodyGradM)" />
+              <path d="M 138,52 C 146,52 152,54 150,56 C 147,58 140,56 136,55 Z" fill="url(#carBodyGradM)" />
+              <!-- Windshield Cutout -->
+              <path d="M 78,48 C 83,38 98,34 98,34 C 98,34 113,38 118,48 C 114,52 108,54 98,54 C 88,54 82,52 78,48 Z" fill="#09090d" stroke="url(#carBodyGradM)" stroke-width="1" />
+              <!-- Windshield Swoop/Reflection -->
+              <path d="M 94,37 C 103,37 112,41 115,45 C 109,47 104,43 94,37 Z" fill="#ffffff" opacity="0.9" />
+              <!-- Headlights -->
+              <path d="M 56,64 C 62,67 68,68 72,68 C 66,69 60,68 56,64 Z" fill="#ffffff" />
+              <path d="M 144,64 C 138,67 132,68 128,68 C 134,69 140,68 144,64 Z" fill="#ffffff" />
+              <!-- Front Grille details -->
+              <path d="M 60,70 L 70,70 L 68,72 L 62,72 Z" fill="#09090d" />
+              <path d="M 140,70 L 130,70 L 132,72 L 138,72 Z" fill="#09090d" />
+              <path d="M 82,70 L 118,70 L 116,72 L 84,72 Z" fill="#09090d" />
+              <!-- Splitter Lip -->
+              <path d="M 52,74 L 148,74 L 144,76 L 56,76 Z" fill="url(#carBodyGradM)" />
             </g>
-            <path d="M 3,92 L 18,102 L 18,82 Z" fill="#4a0a0f" />
-            <path d="M 197,92 L 182,102 L 182,82 Z" fill="#4a0a0f" />
-            <path d="M 2,82 C 50,68 150,68 198,82 L 198,118 C 150,104 50,104 2,118 Z" fill="url(#chromeGradM)" />
-            <path d="M 5,84 C 50,71 150,71 195,84 L 195,115 C 150,102 50,102 5,115 Z" fill="url(#bannerBgM)" />
-            <path id="textPathTopM" d="M 10,100 C 55,87 145,87 190,100" fill="none" stroke="none" />
-            <path id="textPathBottomM" d="M 12,111 C 55,98 145,98 188,111" fill="none" stroke="none" />
-            <text font-family="'Outfit', sans-serif" font-weight="900" font-size="12px" fill="#ffffff" letter-spacing="2px">
-              <textPath href="#textPathTopM" startOffset="50%" text-anchor="middle">RIVERSIDE</textPath>
-            </text>
-            <text font-family="'Outfit', sans-serif" font-weight="900" font-size="13px" fill="url(#chromeGradM)" letter-spacing="3.5px">
-              <textPath href="#textPathBottomM" startOffset="50%" text-anchor="middle">TINTS</textPath>
-            </text>
-            <use href="#starM" x="55" y="137" />
-            <use href="#starM" x="77" y="145" />
-            <use href="#starM" x="100" y="148" />
-            <use href="#starM" x="123" y="145" />
-            <use href="#starM" x="145" y="137" />
+            <!-- Stacked Layered Text: RIVERSIDE TINTS -->
+            <!-- RIVERSIDE (Line 1) -->
+            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#000000" stroke-width="6" stroke-linejoin="round">RIVERSIDE</text>
+            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">RIVERSIDE</text>
+            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="url(#redGradM)">RIVERSIDE</text>
+            <!-- TINTS (Line 2) -->
+            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#000000" stroke-width="7" stroke-linejoin="round">TINTS</text>
+            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">TINTS</text>
+            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="url(#redGradM)">TINTS</text>
           </g>
         </svg>
       </div>
@@ -922,65 +924,66 @@
 
           <div class="footer-brand">
             <a href="#" class="logo-badge" aria-label="Riverside Tints Home" style="display: inline-block; margin-bottom: 20px;">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" class="logo-svg" style="height: 90px;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logo-svg" style="height: 90px;">
                 <defs>
-                  <linearGradient id="shieldBgF" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#e63946" />
-                    <stop offset="40%" stop-color="#b81d24" />
-                    <stop offset="100%" stop-color="#7a0f14" />
-                  </linearGradient>
-                  <linearGradient id="bannerBgF" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#1b1b26" />
-                    <stop offset="100%" stop-color="#0a0a0f" />
-                  </linearGradient>
                   <linearGradient id="chromeGradF" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stop-color="#ffffff" />
-                    <stop offset="20%" stop-color="#cccccc" />
-                    <stop offset="50%" stop-color="#aaaaaa" />
-                    <stop offset="80%" stop-color="#e0e0e0" />
-                    <stop offset="100%" stop-color="#888888" />
+                    <stop offset="25%" stop-color="#b8b8b8" />
+                    <stop offset="50%" stop-color="#7a7a7a" />
+                    <stop offset="75%" stop-color="#cccccc" />
+                    <stop offset="100%" stop-color="#555555" />
                   </linearGradient>
-                  <linearGradient id="goldGradF" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#fff3a8" />
-                    <stop offset="50%" stop-color="#f4c430" />
-                    <stop offset="100%" stop-color="#b8860b" />
+                  <linearGradient id="carBodyGradF" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="100%" stop-color="#9ca3af" />
+                  </linearGradient>
+                  <linearGradient id="redGradF" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ff3b30" />
+                    <stop offset="100%" stop-color="#e62525" />
                   </linearGradient>
                   <filter id="logoShadowF" x="-10%" y="-10%" width="120%" height="120%">
                     <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
                   </filter>
                 </defs>
-                <g id="starF">
-                  <polygon points="0,-7 2.1,-2.1 7.2,-2.1 3.1,1 4.7,5.9 0,2.9 -4.7,5.9 -3.1,1 -7.2,-2.1 -2.1,-2.1" fill="url(#goldGradF)" />
-                </g>
                 <g filter="url(#logoShadowF)">
-                  <path d="M 100,5 C 140,5 178,13 195,24 C 200,55 195,95 178,128 C 156,160 124,175 100,175 C 76,175 44,160 22,128 C 5,95 0,55 5,24 C 22,13 60,5 100,5 Z" fill="url(#chromeGradF)" />
-                  <path d="M 100,10 C 136,10 171,17 187,27 C 191,55 187,92 171,123 C 151,152 121,166 100,166 C 79,166 49,152 29,123 C 13,92 9,55 13,27 C 29,17 64,10 100,10 Z" fill="url(#shieldBgF)" />
-                  <!-- Sleek Sports Car Silhouette (Fits perfectly above the banner) -->
+                  <!-- Outer Bevel Shield (Silver Border) -->
+                  <path d="M 100,10 Q 150,20 188,12 C 198,85 183,152 100,192 C 17,152 2,85 12,12 Q 50,20 100,10 Z" fill="url(#chromeGradF)" />
+                  <!-- Inner Shield Area (Black/Dark Background) -->
+                  <path d="M 100,16 Q 148,25 182,18 C 190,86 177,146 100,184 C 23,146 10,86 18,18 Q 52,25 100,16 Z" fill="#09090d" />
+                  <!-- Red Inner Border -->
+                  <path d="M 100,20 Q 146,28 178,22 C 185,85 173,142 100,178 C 27,142 15,85 22,22 Q 54,28 100,20 Z" fill="none" stroke="#e62525" stroke-width="2" />
+                  <!-- Red Chevron Accent at bottom tip -->
+                  <path d="M 70,148 L 100,172 L 130,148" fill="none" stroke="#e62525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <!-- Sleek Sports Car Silhouette -->
                   <g id="car-silhouette-f">
-                    <path d="M 60,74 C 58,74 56,72 56,70 C 56,63 64,60 72,56 C 78,53 82,50 85,46 C 88,42 90,34 100,34 C 110,34 112,42 115,46 C 118,50 122,53 128,56 C 136,60 144,63 144,70 C 144,72 142,74 140,74 C 120,71.5 80,71.5 60,74 Z" fill="url(#bannerBgF)" stroke="url(#chromeGradF)" stroke-width="1.5" />
-                    <path d="M 82,48 C 88,47 100,47 100,47 C 100,47 112,47 118,48 C 115,54 110,57 100,57 C 90,57 85,54 82,48 Z" fill="#05050a" stroke="url(#chromeGradF)" stroke-width="1" />
-                    <path d="M 66,63 L 78,65 L 75,69 L 65,66 Z" fill="url(#goldGradF)" />
-                    <path d="M 134,63 L 122,65 L 125,69 L 135,66 Z" fill="url(#goldGradF)" />
-                    <path d="M 88,67 L 112,67" stroke="url(#chromeGradF)" stroke-width="1" stroke-linecap="round" />
-                    <path d="M 92,70 L 108,70" stroke="url(#chromeGradF)" stroke-width="1" stroke-linecap="round" />
+                    <!-- Main Silver Body Shape -->
+                    <path d="M 50,70 C 50,60 60,54 75,50 C 85,36 95,30 100,30 C 105,30 115,36 125,50 C 140,54 150,60 150,70 C 150,76 142,76 138,76 C 130,76 125,73 125,73 L 75,73 C 75,73 70,76 62,76 C 58,76 50,76 50,70 Z" fill="url(#carBodyGradF)" />
+                    <!-- Side Mirrors -->
+                    <path d="M 62,52 C 54,52 48,54 50,56 C 53,58 60,56 64,55 Z" fill="url(#carBodyGradF)" />
+                    <path d="M 138,52 C 146,52 152,54 150,56 C 147,58 140,56 136,55 Z" fill="url(#carBodyGradF)" />
+                    <!-- Windshield Cutout -->
+                    <path d="M 78,48 C 83,38 98,34 98,34 C 98,34 113,38 118,48 C 114,52 108,54 98,54 C 88,54 82,52 78,48 Z" fill="#09090d" stroke="url(#carBodyGradF)" stroke-width="1" />
+                    <!-- Windshield Swoop/Reflection -->
+                    <path d="M 94,37 C 103,37 112,41 115,45 C 109,47 104,43 94,37 Z" fill="#ffffff" opacity="0.9" />
+                    <!-- Headlights -->
+                    <path d="M 56,64 C 62,67 68,68 72,68 C 66,69 60,68 56,64 Z" fill="#ffffff" />
+                    <path d="M 144,64 C 138,67 132,68 128,68 C 134,69 140,68 144,64 Z" fill="#ffffff" />
+                    <!-- Front Grille details -->
+                    <path d="M 60,70 L 70,70 L 68,72 L 62,72 Z" fill="#09090d" />
+                    <path d="M 140,70 L 130,70 L 132,72 L 138,72 Z" fill="#09090d" />
+                    <path d="M 82,70 L 118,70 L 116,72 L 84,72 Z" fill="#09090d" />
+                    <!-- Splitter Lip -->
+                    <path d="M 52,74 L 148,74 L 144,76 L 56,76 Z" fill="url(#carBodyGradF)" />
                   </g>
-                  <path d="M 3,92 L 18,102 L 18,82 Z" fill="#4a0a0f" />
-                  <path d="M 197,92 L 182,102 L 182,82 Z" fill="#4a0a0f" />
-                  <path d="M 2,82 C 50,68 150,68 198,82 L 198,118 C 150,104 50,104 2,118 Z" fill="url(#chromeGradF)" />
-                  <path d="M 5,84 C 50,71 150,71 195,84 L 195,115 C 150,102 50,102 5,115 Z" fill="url(#bannerBgF)" />
-                  <path id="textPathTopF" d="M 10,100 C 55,87 145,87 190,100" fill="none" stroke="none" />
-                  <path id="textPathBottomF" d="M 12,111 C 55,98 145,98 188,111" fill="none" stroke="none" />
-                  <text font-family="'Outfit', sans-serif" font-weight="900" font-size="12px" fill="#ffffff" letter-spacing="2px">
-                    <textPath href="#textPathTopF" startOffset="50%" text-anchor="middle">RIVERSIDE</textPath>
-                  </text>
-                  <text font-family="'Outfit', sans-serif" font-weight="900" font-size="13px" fill="url(#chromeGradF)" letter-spacing="3.5px">
-                    <textPath href="#textPathBottomF" startOffset="50%" text-anchor="middle">TINTS</textPath>
-                  </text>
-                  <use href="#starF" x="55" y="137" />
-                  <use href="#starF" x="77" y="145" />
-                  <use href="#starF" x="100" y="148" />
-                  <use href="#starF" x="123" y="145" />
-                  <use href="#starF" x="145" y="137" />
+                  <!-- Stacked Layered Text: RIVERSIDE TINTS -->
+                  <!-- RIVERSIDE (Line 1) -->
+                  <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#000000" stroke-width="6" stroke-linejoin="round">RIVERSIDE</text>
+                  <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">RIVERSIDE</text>
+                  <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="url(#redGradF)">RIVERSIDE</text>
+                  <!-- TINTS (Line 2) -->
+                  <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#000000" stroke-width="7" stroke-linejoin="round">TINTS</text>
+                  <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">TINTS</text>
+                  <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="url(#redGradF)">TINTS</text>
                 </g>
               </svg>
             </a>
