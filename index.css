@@ -338,8 +338,9 @@ ul, ol {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
   padding-top: 80px;
+  z-index: 2;
 }
 
 .hero-bg {
@@ -530,6 +531,7 @@ ul, ol {
   padding: var(--section-padding);
   background: var(--color-bg-secondary);
   position: relative;
+  z-index: 1;
 }
 
 .services-grid {
