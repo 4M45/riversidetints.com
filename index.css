@@ -1168,7 +1168,8 @@ ul, ol {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.cta-form input {
+.cta-form input,
+.cta-form textarea {
   width: 100%;
   padding: 14px 18px;
   background: rgba(0, 0, 0, 0.25);
@@ -1180,11 +1181,18 @@ ul, ol {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cta-form input::placeholder {
+.cta-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.cta-form input::placeholder,
+.cta-form textarea::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-.cta-form input:focus {
+.cta-form input:focus,
+.cta-form textarea:focus {
   outline: none;
   border-color: #fff;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
