@@ -202,67 +202,20 @@
 
       <!-- Centered Shield Logo Badge -->
       <a href="#" class="logo-badge" aria-label="Riverside Tints Home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logo-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 685 756" class="logo-svg" style="filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.6));">
           <defs>
-            <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#ffffff" />
-              <stop offset="25%" stop-color="#b8b8b8" />
-              <stop offset="50%" stop-color="#7a7a7a" />
-              <stop offset="75%" stop-color="#cccccc" />
-              <stop offset="100%" stop-color="#555555" />
-            </linearGradient>
-            <linearGradient id="carBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#ffffff" />
-              <stop offset="100%" stop-color="#9ca3af" />
-            </linearGradient>
-            <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <linearGradient id="redGradOverlayH" x1="0%" y1="0%" x2="0%" y2="100%">
               <stop offset="0%" stop-color="#ff3b30" />
-              <stop offset="100%" stop-color="#e62525" />
+              <stop offset="100%" stop-color="#9e0c0c" />
             </linearGradient>
-            <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%">
-              <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
-            </filter>
           </defs>
-          <g filter="url(#logoShadow)">
-            <!-- Outer Bevel Shield (Silver Border) -->
-            <path d="M 100,10 Q 150,20 188,12 C 198,85 183,152 100,192 C 17,152 2,85 12,12 Q 50,20 100,10 Z" fill="url(#chromeGrad)" />
-            <!-- Inner Shield Area (Black/Dark Background) -->
-            <path d="M 100,16 Q 148,25 182,18 C 190,86 177,146 100,184 C 23,146 10,86 18,18 Q 52,25 100,16 Z" fill="#09090d" />
-            <!-- Red Inner Border -->
-            <path d="M 100,20 Q 146,28 178,22 C 185,85 173,142 100,178 C 27,142 15,85 22,22 Q 54,28 100,20 Z" fill="none" stroke="#e62525" stroke-width="2" />
-            <!-- Red Chevron Accent at bottom tip -->
-            <path d="M 70,148 L 100,172 L 130,148" fill="none" stroke="#e62525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-            <!-- Sleek Sports Car Silhouette -->
-            <g id="car-silhouette">
-              <!-- Main Silver Body Shape -->
-              <path d="M 50,70 C 50,60 60,54 75,50 C 85,36 95,30 100,30 C 105,30 115,36 125,50 C 140,54 150,60 150,70 C 150,76 142,76 138,76 C 130,76 125,73 125,73 L 75,73 C 75,73 70,76 62,76 C 58,76 50,76 50,70 Z" fill="url(#carBodyGrad)" />
-              <!-- Side Mirrors -->
-              <path d="M 62,52 C 54,52 48,54 50,56 C 53,58 60,56 64,55 Z" fill="url(#carBodyGrad)" />
-              <path d="M 138,52 C 146,52 152,54 150,56 C 147,58 140,56 136,55 Z" fill="url(#carBodyGrad)" />
-              <!-- Windshield Cutout -->
-              <path d="M 78,48 C 83,38 98,34 98,34 C 98,34 113,38 118,48 C 114,52 108,54 98,54 C 88,54 82,52 78,48 Z" fill="#09090d" stroke="url(#carBodyGrad)" stroke-width="1" />
-              <!-- Windshield Swoop/Reflection -->
-              <path d="M 94,37 C 103,37 112,41 115,45 C 109,47 104,43 94,37 Z" fill="#ffffff" opacity="0.9" />
-              <!-- Headlights -->
-              <path d="M 56,64 C 62,67 68,68 72,68 C 66,69 60,68 56,64 Z" fill="#ffffff" />
-              <path d="M 144,64 C 138,67 132,68 128,68 C 134,69 140,68 144,64 Z" fill="#ffffff" />
-              <!-- Front Grille details -->
-              <path d="M 60,70 L 70,70 L 68,72 L 62,72 Z" fill="#09090d" />
-              <path d="M 140,70 L 130,70 L 132,72 L 138,72 Z" fill="#09090d" />
-              <path d="M 82,70 L 118,70 L 116,72 L 84,72 Z" fill="#09090d" />
-              <!-- Splitter Lip -->
-              <path d="M 52,74 L 148,74 L 144,76 L 56,76 Z" fill="url(#carBodyGrad)" />
-            </g>
-            <!-- Stacked Layered Text: RIVERSIDE TINTS -->
-            <!-- RIVERSIDE (Line 1) -->
-            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#000000" stroke-width="6" stroke-linejoin="round">RIVERSIDE</text>
-            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">RIVERSIDE</text>
-            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="url(#redGrad)">RIVERSIDE</text>
-            <!-- TINTS (Line 2) -->
-            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#000000" stroke-width="7" stroke-linejoin="round">TINTS</text>
-            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">TINTS</text>
-            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="url(#redGrad)">TINTS</text>
-          </g>
+          <image href="images/shield_clean.png" x="0" y="0" width="685" height="756" />
+          <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="none" stroke="#000000" stroke-width="20" stroke-linejoin="round">RIVERSIDE</text>
+          <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">RIVERSIDE</text>
+          <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="url(#redGradOverlayH)">RIVERSIDE</text>
+          <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="none" stroke="#000000" stroke-width="24" stroke-linejoin="round">TINTS</text>
+          <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">TINTS</text>
+          <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="url(#redGradOverlayH)">TINTS</text>
         </svg>
       </a>
 
@@ -295,67 +248,20 @@
   <nav class="nav-links" id="nav-links" aria-label="Mobile navigation">
     <div style="text-align: center; margin-bottom: 30px; width: 100%;">
       <div style="width: 110px; margin: 0 auto;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logo-svg" style="height: 100px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 685 756" class="logo-svg" style="height: 100px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.6));">
           <defs>
-            <linearGradient id="chromeGradM" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#ffffff" />
-              <stop offset="25%" stop-color="#b8b8b8" />
-              <stop offset="50%" stop-color="#7a7a7a" />
-              <stop offset="75%" stop-color="#cccccc" />
-              <stop offset="100%" stop-color="#555555" />
-            </linearGradient>
-            <linearGradient id="carBodyGradM" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#ffffff" />
-              <stop offset="100%" stop-color="#9ca3af" />
-            </linearGradient>
-            <linearGradient id="redGradM" x1="0%" y1="0%" x2="100%" y2="0%">
+            <linearGradient id="redGradOverlayM" x1="0%" y1="0%" x2="0%" y2="100%">
               <stop offset="0%" stop-color="#ff3b30" />
-              <stop offset="100%" stop-color="#e62525" />
+              <stop offset="100%" stop-color="#9e0c0c" />
             </linearGradient>
-            <filter id="logoShadowM" x="-10%" y="-10%" width="120%" height="120%">
-              <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
-            </filter>
           </defs>
-          <g filter="url(#logoShadowM)">
-            <!-- Outer Bevel Shield (Silver Border) -->
-            <path d="M 100,10 Q 150,20 188,12 C 198,85 183,152 100,192 C 17,152 2,85 12,12 Q 50,20 100,10 Z" fill="url(#chromeGradM)" />
-            <!-- Inner Shield Area (Black/Dark Background) -->
-            <path d="M 100,16 Q 148,25 182,18 C 190,86 177,146 100,184 C 23,146 10,86 18,18 Q 52,25 100,16 Z" fill="#09090d" />
-            <!-- Red Inner Border -->
-            <path d="M 100,20 Q 146,28 178,22 C 185,85 173,142 100,178 C 27,142 15,85 22,22 Q 54,28 100,20 Z" fill="none" stroke="#e62525" stroke-width="2" />
-            <!-- Red Chevron Accent at bottom tip -->
-            <path d="M 70,148 L 100,172 L 130,148" fill="none" stroke="#e62525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-            <!-- Sleek Sports Car Silhouette -->
-            <g id="car-silhouette-m">
-              <!-- Main Silver Body Shape -->
-              <path d="M 50,70 C 50,60 60,54 75,50 C 85,36 95,30 100,30 C 105,30 115,36 125,50 C 140,54 150,60 150,70 C 150,76 142,76 138,76 C 130,76 125,73 125,73 L 75,73 C 75,73 70,76 62,76 C 58,76 50,76 50,70 Z" fill="url(#carBodyGradM)" />
-              <!-- Side Mirrors -->
-              <path d="M 62,52 C 54,52 48,54 50,56 C 53,58 60,56 64,55 Z" fill="url(#carBodyGradM)" />
-              <path d="M 138,52 C 146,52 152,54 150,56 C 147,58 140,56 136,55 Z" fill="url(#carBodyGradM)" />
-              <!-- Windshield Cutout -->
-              <path d="M 78,48 C 83,38 98,34 98,34 C 98,34 113,38 118,48 C 114,52 108,54 98,54 C 88,54 82,52 78,48 Z" fill="#09090d" stroke="url(#carBodyGradM)" stroke-width="1" />
-              <!-- Windshield Swoop/Reflection -->
-              <path d="M 94,37 C 103,37 112,41 115,45 C 109,47 104,43 94,37 Z" fill="#ffffff" opacity="0.9" />
-              <!-- Headlights -->
-              <path d="M 56,64 C 62,67 68,68 72,68 C 66,69 60,68 56,64 Z" fill="#ffffff" />
-              <path d="M 144,64 C 138,67 132,68 128,68 C 134,69 140,68 144,64 Z" fill="#ffffff" />
-              <!-- Front Grille details -->
-              <path d="M 60,70 L 70,70 L 68,72 L 62,72 Z" fill="#09090d" />
-              <path d="M 140,70 L 130,70 L 132,72 L 138,72 Z" fill="#09090d" />
-              <path d="M 82,70 L 118,70 L 116,72 L 84,72 Z" fill="#09090d" />
-              <!-- Splitter Lip -->
-              <path d="M 52,74 L 148,74 L 144,76 L 56,76 Z" fill="url(#carBodyGradM)" />
-            </g>
-            <!-- Stacked Layered Text: RIVERSIDE TINTS -->
-            <!-- RIVERSIDE (Line 1) -->
-            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#000000" stroke-width="6" stroke-linejoin="round">RIVERSIDE</text>
-            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">RIVERSIDE</text>
-            <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="url(#redGradM)">RIVERSIDE</text>
-            <!-- TINTS (Line 2) -->
-            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#000000" stroke-width="7" stroke-linejoin="round">TINTS</text>
-            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">TINTS</text>
-            <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="url(#redGradM)">TINTS</text>
-          </g>
+          <image href="images/shield_clean.png" x="0" y="0" width="685" height="756" />
+          <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="none" stroke="#000000" stroke-width="20" stroke-linejoin="round">RIVERSIDE</text>
+          <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">RIVERSIDE</text>
+          <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="url(#redGradOverlayM)">RIVERSIDE</text>
+          <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="none" stroke="#000000" stroke-width="24" stroke-linejoin="round">TINTS</text>
+          <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">TINTS</text>
+          <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="url(#redGradOverlayM)">TINTS</text>
         </svg>
       </div>
     </div>
@@ -924,67 +830,20 @@
 
           <div class="footer-brand">
             <a href="#" class="logo-badge" aria-label="Riverside Tints Home" style="display: inline-block; margin-bottom: 20px;">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logo-svg" style="height: 90px;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 685 756" class="logo-svg" style="height: 90px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.6));">
                 <defs>
-                  <linearGradient id="chromeGradF" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#ffffff" />
-                    <stop offset="25%" stop-color="#b8b8b8" />
-                    <stop offset="50%" stop-color="#7a7a7a" />
-                    <stop offset="75%" stop-color="#cccccc" />
-                    <stop offset="100%" stop-color="#555555" />
-                  </linearGradient>
-                  <linearGradient id="carBodyGradF" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#ffffff" />
-                    <stop offset="100%" stop-color="#9ca3af" />
-                  </linearGradient>
-                  <linearGradient id="redGradF" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <linearGradient id="redGradOverlayF" x1="0%" y1="0%" x2="0%" y2="100%">
                     <stop offset="0%" stop-color="#ff3b30" />
-                    <stop offset="100%" stop-color="#e62525" />
+                    <stop offset="100%" stop-color="#9e0c0c" />
                   </linearGradient>
-                  <filter id="logoShadowF" x="-10%" y="-10%" width="120%" height="120%">
-                    <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
-                  </filter>
                 </defs>
-                <g filter="url(#logoShadowF)">
-                  <!-- Outer Bevel Shield (Silver Border) -->
-                  <path d="M 100,10 Q 150,20 188,12 C 198,85 183,152 100,192 C 17,152 2,85 12,12 Q 50,20 100,10 Z" fill="url(#chromeGradF)" />
-                  <!-- Inner Shield Area (Black/Dark Background) -->
-                  <path d="M 100,16 Q 148,25 182,18 C 190,86 177,146 100,184 C 23,146 10,86 18,18 Q 52,25 100,16 Z" fill="#09090d" />
-                  <!-- Red Inner Border -->
-                  <path d="M 100,20 Q 146,28 178,22 C 185,85 173,142 100,178 C 27,142 15,85 22,22 Q 54,28 100,20 Z" fill="none" stroke="#e62525" stroke-width="2" />
-                  <!-- Red Chevron Accent at bottom tip -->
-                  <path d="M 70,148 L 100,172 L 130,148" fill="none" stroke="#e62525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <!-- Sleek Sports Car Silhouette -->
-                  <g id="car-silhouette-f">
-                    <!-- Main Silver Body Shape -->
-                    <path d="M 50,70 C 50,60 60,54 75,50 C 85,36 95,30 100,30 C 105,30 115,36 125,50 C 140,54 150,60 150,70 C 150,76 142,76 138,76 C 130,76 125,73 125,73 L 75,73 C 75,73 70,76 62,76 C 58,76 50,76 50,70 Z" fill="url(#carBodyGradF)" />
-                    <!-- Side Mirrors -->
-                    <path d="M 62,52 C 54,52 48,54 50,56 C 53,58 60,56 64,55 Z" fill="url(#carBodyGradF)" />
-                    <path d="M 138,52 C 146,52 152,54 150,56 C 147,58 140,56 136,55 Z" fill="url(#carBodyGradF)" />
-                    <!-- Windshield Cutout -->
-                    <path d="M 78,48 C 83,38 98,34 98,34 C 98,34 113,38 118,48 C 114,52 108,54 98,54 C 88,54 82,52 78,48 Z" fill="#09090d" stroke="url(#carBodyGradF)" stroke-width="1" />
-                    <!-- Windshield Swoop/Reflection -->
-                    <path d="M 94,37 C 103,37 112,41 115,45 C 109,47 104,43 94,37 Z" fill="#ffffff" opacity="0.9" />
-                    <!-- Headlights -->
-                    <path d="M 56,64 C 62,67 68,68 72,68 C 66,69 60,68 56,64 Z" fill="#ffffff" />
-                    <path d="M 144,64 C 138,67 132,68 128,68 C 134,69 140,68 144,64 Z" fill="#ffffff" />
-                    <!-- Front Grille details -->
-                    <path d="M 60,70 L 70,70 L 68,72 L 62,72 Z" fill="#09090d" />
-                    <path d="M 140,70 L 130,70 L 132,72 L 138,72 Z" fill="#09090d" />
-                    <path d="M 82,70 L 118,70 L 116,72 L 84,72 Z" fill="#09090d" />
-                    <!-- Splitter Lip -->
-                    <path d="M 52,74 L 148,74 L 144,76 L 56,76 Z" fill="url(#carBodyGradF)" />
-                  </g>
-                  <!-- Stacked Layered Text: RIVERSIDE TINTS -->
-                  <!-- RIVERSIDE (Line 1) -->
-                  <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#000000" stroke-width="6" stroke-linejoin="round">RIVERSIDE</text>
-                  <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">RIVERSIDE</text>
-                  <text x="100" y="105" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="19px" letter-spacing="1px" fill="url(#redGradF)">RIVERSIDE</text>
-                  <!-- TINTS (Line 2) -->
-                  <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#000000" stroke-width="7" stroke-linejoin="round">TINTS</text>
-                  <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">TINTS</text>
-                  <text x="100" y="136" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="28px" letter-spacing="2.5px" fill="url(#redGradF)">TINTS</text>
-                </g>
+                <image href="images/shield_clean.png" x="0" y="0" width="685" height="756" />
+                <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="none" stroke="#000000" stroke-width="20" stroke-linejoin="round">RIVERSIDE</text>
+                <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">RIVERSIDE</text>
+                <text x="342.5" y="440" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="70px" letter-spacing="4px" fill="url(#redGradOverlayF)">RIVERSIDE</text>
+                <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="none" stroke="#000000" stroke-width="24" stroke-linejoin="round">TINTS</text>
+                <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round">TINTS</text>
+                <text x="342.5" y="555" text-anchor="middle" font-family="'Oxanium', 'Outfit', sans-serif" font-weight="900" font-size="105px" letter-spacing="10px" fill="url(#redGradOverlayF)">TINTS</text>
               </svg>
             </a>
             <p>Riverside Tints has been the Inland Empire's trusted window tinting and automotive protection shop for over 10 years. We specialize in premium ceramic window tint, paint protection film, vehicle wraps, and auto detailing — all backed by our lifetime warranty.</p>
