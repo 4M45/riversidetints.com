@@ -1112,6 +1112,120 @@ ul, ol {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* CTA Grid Layout */
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+  text-align: left;
+}
+
+.cta-text {
+  max-width: 620px;
+}
+
+.cta-text h2 {
+  margin-bottom: 20px;
+}
+
+.cta-text p {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* Glassmorphic Contact Form */
+.cta-form-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cta-form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cta-form label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-form input {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.cta-form input:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.cta-form button[type="submit"] {
+  align-self: flex-start;
+  margin-top: 8px;
+  cursor: pointer;
+  border: none;
+  width: auto;
+}
+
+/* Responsive adjustments for CTA form */
+@media (max-width: 991px) {
+  .cta-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .cta-text {
+    max-width: 100%;
+  }
+  
+  .cta-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cta-form button[type="submit"] {
+    align-self: center;
+    width: 100%;
+  }
+  
+  .cta-form-container {
+    padding: 30px 24px;
+  }
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */
