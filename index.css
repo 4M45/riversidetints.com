@@ -1311,41 +1311,7 @@ ul, ol {
     --section-padding: 70px 0;
   }
 
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 280px;
-    height: 100vh;
-    background: var(--color-bg-secondary);
-    flex-direction: column;
-    justify-content: center;
-    gap: 28px;
-    padding: 40px;
-    border-left: 1px solid var(--color-border);
-    transition: var(--transition-smooth);
-    z-index: 1000;
-  }
-
-  .nav-links.active {
-    right: 0;
-  }
-
-  .nav-links a {
-    font-size: 1.1rem;
-  }
-
-  .header-phone {
-    display: none;
-  }
-
-  .header .btn-primary {
-    display: none;
-  }
+  /* Removed redundant hamburger/nav drawer styles to re-scope at max-width: 1024px */
 
   .hero h1 {
     font-size: clamp(2.2rem, 8vw, 3.2rem);
@@ -1435,18 +1401,18 @@ ul, ol {
 
 /* ---------- Mobile Nav Overlay ---------- */
 .nav-overlay {
-  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 999;
   opacity: 0;
+  pointer-events: none;
   transition: var(--transition-smooth);
 }
 
 .nav-overlay.active {
-  display: block;
   opacity: 1;
+  pointer-events: auto;
 }
 
 /* ---------- Tint Guide Cards ---------- */
@@ -1675,7 +1641,7 @@ ul, ol {
 @media (min-width: 1025px) {
   .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 90px;
     position: relative;
@@ -1684,37 +1650,39 @@ ul, ol {
   .nav-split-left {
     display: flex;
     gap: 32px;
-    flex: 1;
-    justify-content: flex-end;
-    margin-right: 60px;
+    margin-right: 110px;
   }
 
   .nav-split-right {
     display: flex;
     gap: 32px;
-    flex: 1;
-    justify-content: flex-start;
-    margin-left: 60px;
+    margin-left: 110px;
   }
 
-  .header .logo {
+  .header .logo-badge {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    text-align: center;
+    display: block;
+  }
+
+  .header .logo-svg {
+    height: 85px;
+    width: auto;
+    display: block;
   }
 
   .header-contact-actions {
     display: flex;
     align-items: center;
     gap: 24px;
-    flex-shrink: 0;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
   }
 
   .header-phone-link {
@@ -1736,10 +1704,10 @@ ul, ol {
     color: var(--color-red-primary);
   }
 
-  /* Hide default nav layout on desktop */
-  .header .nav-links,
+  /* Hide mobile navigation and drawer on desktop */
+  #nav-links,
   .header .header-right {
-    display: none;
+    display: none !important;
   }
 
   .nav-split-left a, .nav-split-right a {
@@ -1780,7 +1748,53 @@ ul, ol {
   .nav-split-left,
   .nav-split-right,
   .header-contact-actions {
-    display: none;
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header-right {
+    display: flex;
+  }
+
+  .header .logo-badge {
+    position: static;
+    transform: none;
+    display: block;
+    z-index: 10;
+  }
+
+  .header .logo-svg {
+    height: 65px;
+    width: auto;
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--color-bg-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding: 40px;
+    border-left: 1px solid var(--color-border);
+    transition: var(--transition-smooth);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
   }
 }
 
