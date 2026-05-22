@@ -40,6 +40,9 @@
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     "name": "Riverside Tints",
+    "image": "https://riversidetints.com/images/shield_clean.png",
+    "telephone": "+19515550190",
+    "priceRange": "$$",
     "description": "Professional window tinting, paint protection film, ceramic coating, and auto detailing in Riverside, CA.",
     "url": "https://riversidetints.com",
     "address": {
@@ -69,7 +72,6 @@
         "closes": "16:00"
       }
     ],
-    "priceRange": "$$",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -80,6 +82,16 @@
       "https://www.instagram.com/riversidetints1",
       "https://yelp.com/biz/riverside-tints"
     ]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Riverside Tints",
+    "url": "https://riversidetints.com/"
   }
   </script>
 
@@ -165,26 +177,58 @@
   }
   </script>
 
-  <!-- Structured Data: Service -->
+  <!-- Structured Data: Services List -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Window Tinting",
-    "provider": {
-      "@type": "AutoRepair",
-      "name": "Riverside Tints"
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Automotive Window Tinting",
+      "serviceType": "Window Tinting",
+      "provider": {
+        "@type": "AutoRepair",
+        "name": "Riverside Tints",
+        "url": "https://riversidetints.com"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Riverside"
+      },
+      "description": "Premium carbon and ceramic window tinting with a lifetime warranty to reject heat and block UV rays."
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Riverside",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "California"
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Paint Protection Film (PPF)",
+      "serviceType": "Paint Protection",
+      "provider": {
+        "@type": "AutoRepair",
+        "name": "Riverside Tints",
+        "url": "https://riversidetints.com"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Riverside"
+      },
+      "description": "Invisible, self-healing paint protection film custom-cut for vehicles (especially Tesla models) to shield against rock chips and scratches."
     },
-    "description": "Professional automotive, commercial, and residential window tinting services in Riverside, CA. Using premium ceramic and carbon films with lifetime warranty."
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Auto Detailing & Ceramic Coating",
+      "serviceType": "Auto Detailing",
+      "provider": {
+        "@type": "AutoRepair",
+        "name": "Riverside Tints",
+        "url": "https://riversidetints.com"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Riverside"
+      },
+      "description": "Professional exterior paint correction, premium ceramic coating installations, and complete interior deep cleaning services."
+    }
+  ]
   </script>
 </head>
 <body>
@@ -290,9 +334,14 @@
   <div class="nav-overlay" id="nav-overlay"></div>
 
   <!-- ============================================================
-       HERO SECTION
+       MAIN CONTENT
        ============================================================ -->
-  <section class="hero" id="home">
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="hero" id="home">
     <div class="hero-bg">
       <img src="images/hero-tinting.png" alt="Professional window tint technician applying ceramic film to a car at Riverside Tints" width="1920" height="1080" loading="eager">
     </div>
@@ -415,7 +464,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <div>
-                <h4>Lifetime Warranty</h4>
+                <h3>Lifetime Warranty</h3>
                 <p>Every installation backed by our no-questions-asked lifetime warranty</p>
               </div>
             </div>
@@ -424,7 +473,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
               </div>
               <div>
-                <h4>Certified Installers</h4>
+                <h3>Certified Installers</h3>
                 <p>Factory-trained technicians with 10+ years of hands-on experience</p>
               </div>
             </div>
@@ -433,7 +482,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
               </div>
               <div>
-                <h4>Premium Materials</h4>
+                <h3>Premium Materials</h3>
                 <p>Top-tier ceramic &amp; carbon films from leading manufacturers</p>
               </div>
             </div>
@@ -442,7 +491,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div>
-                <h4>Same-Day Service</h4>
+                <h3>Same-Day Service</h3>
                 <p>Most vehicles completed in 1–2 hours — drive away the same day</p>
               </div>
             </div>
@@ -475,7 +524,7 @@
 
         <!-- Featured Image with Slanted Corner Stripes Border Frame -->
         <div class="slanted-frame-container" style="margin-bottom: 50px;">
-          <img src="images/service-paint-protection.png" alt="Tesla paint protection film application in paint booth at Riverside Tints" style="width: 100%; height: auto; display: block; object-fit: cover;">
+          <img src="images/service-paint-protection.png" alt="Tesla paint protection film application in paint booth at Riverside Tints" style="width: 100%; height: auto; display: block; object-fit: cover;" loading="lazy" width="1200" height="500">
         </div>
 
         <!-- Stats Counters Group (Image 2 style) inside .stats for script.js compatibility -->
@@ -513,7 +562,7 @@
           <div class="tint-card-header">
             <div class="tint-percentage">5%</div>
             <div>
-              <h4>Limo Tint</h4>
+              <h3>Limo Tint</h3>
             </div>
           </div>
           <div class="tint-bar"><div class="tint-bar-fill" style="width: 95%"></div></div>
@@ -524,7 +573,7 @@
           <div class="tint-card-header">
             <div class="tint-percentage">20%</div>
             <div>
-              <h4>Dark Tint</h4>
+              <h3>Dark Tint</h3>
             </div>
           </div>
           <div class="tint-bar"><div class="tint-bar-fill" style="width: 80%"></div></div>
@@ -535,7 +584,7 @@
           <div class="tint-card-header">
             <div class="tint-percentage">35%</div>
             <div>
-              <h4>Medium Tint</h4>
+              <h3>Medium Tint</h3>
             </div>
           </div>
           <div class="tint-bar"><div class="tint-bar-fill" style="width: 65%"></div></div>
@@ -546,7 +595,7 @@
           <div class="tint-card-header">
             <div class="tint-percentage">50%</div>
             <div>
-              <h4>Light Tint</h4>
+              <h3>Light Tint</h3>
             </div>
           </div>
           <div class="tint-bar"><div class="tint-bar-fill" style="width: 50%"></div></div>
@@ -773,28 +822,28 @@
         <div class="gallery-item reveal reveal-delay-1">
           <img src="images/gallery-vehicle-wrap.png" alt="Premium matte vehicle wrap on a sports car by Riverside Tints" width="400" height="300" loading="lazy">
           <div class="gallery-item-overlay">
-            <h4>Vehicle Wraps</h4>
+            <h3>Vehicle Wraps</h3>
           </div>
         </div>
 
         <div class="gallery-item reveal reveal-delay-2">
           <img src="images/service-paint-protection.png" alt="Clear paint protection film application for rock chip defense by Riverside Tints" width="400" height="300" loading="lazy">
           <div class="gallery-item-overlay">
-            <h4>Paint Protection</h4>
+            <h3>Paint Protection</h3>
           </div>
         </div>
 
         <div class="gallery-item reveal reveal-delay-3">
           <img src="images/gallery-caliper-wrap.png" alt="Custom red caliper wrap with premium finish by Riverside Tints" width="400" height="300" loading="lazy">
           <div class="gallery-item-overlay">
-            <h4>Caliper Wraps</h4>
+            <h3>Caliper Wraps</h3>
           </div>
         </div>
 
         <div class="gallery-item reveal reveal-delay-4">
           <img src="images/gallery-chrome-delete.png" alt="Sleek gloss black chrome delete wrap on window trim by Riverside Tints" width="400" height="300" loading="lazy">
           <div class="gallery-item-overlay">
-            <h4>Chrome Deletes</h4>
+            <h3>Chrome Deletes</h3>
           </div>
         </div>
 
@@ -838,6 +887,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ============================================================
        FOOTER
@@ -890,7 +941,7 @@
           </div>
 
           <div class="footer-col">
-            <h4>Quick Links</h4>
+            <h3>Quick Links</h3>
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
@@ -902,7 +953,7 @@
           </div>
 
           <div class="footer-col">
-            <h4>Services</h4>
+            <h3>Services</h3>
             <ul>
               <li><a href="#service-window-tinting">Window Tinting</a></li>
               <li><a href="#service-paint-protection">Paint Protection Film</a></li>
@@ -914,7 +965,7 @@
           </div>
 
           <div class="footer-col">
-            <h4>Contact Us</h4>
+            <h3>Contact Us</h3>
             <ul>
               <li>
                 <div class="footer-contact-item">
