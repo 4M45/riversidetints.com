@@ -1776,13 +1776,17 @@ ul, ol {
   }
 
   .nav-split-left {
+    flex: 1;
     display: flex;
+    justify-content: flex-end;
     gap: 32px;
     margin-right: 110px;
   }
 
   .nav-split-right {
+    flex: 1;
     display: flex;
+    justify-content: flex-start;
     gap: 32px;
     margin-left: 110px;
   }
