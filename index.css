@@ -2142,3 +2142,26 @@ ul, ol {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
+
+/* Blog Image Styles */
+.blog-card-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.article-hero-img, .article-inline-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.article-inline-img {
+  margin-top: 30px;
+}
